@@ -1,0 +1,27 @@
+<!--
+  @description       : 
+  @author            : Harlinsson Chavarro (HCH)
+  @group             : 
+  @last modified on  : 07-06-2023
+  @last modified by  : Harlinsson Chavarro (HCH)
+-->
+<template>
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr>
+                <th scope="col">Columna 1</th>
+                <th scope="col">Columna 2</th>
+                <th scope="col">Columna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={data} for:item="item">
+                <tr key={item.id}>
+                    <td>{item.columna1}</td>
+                    <td>{item.columna2}</td>
+                    <td>{item.columna3}</td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+</template>
