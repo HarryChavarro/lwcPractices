@@ -2,14 +2,14 @@
  * @description       : 
  * @author            : Harlinsson Chavarro (HCH)
  * @group             : 
- * @last modified on  : 07-08-2023
+ * @last modified on  : 06-28-2023
  * @last modified by  : Harlinsson Chavarro (HCH)
 **/
 
 public with sharing class SobjectController {
     
     @AuraEnabled(cacheable=true)
-    public static List<Account> getAccountList(String nameSobject) {
+    public static List<Account> getAccountList() {
         return [SELECT Name, Industry, AnnualRevenue, Phone, Website FROM Account];
     }
 
