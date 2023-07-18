@@ -33,4 +33,3 @@ import { NavigationMixin } from 'lightning/navigation';
         });
      }
   }
-  

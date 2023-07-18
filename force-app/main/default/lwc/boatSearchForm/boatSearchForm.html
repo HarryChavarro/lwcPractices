@@ -2,14 +2,19 @@
   @description       : 
   @author            : Harlinsson Chavarro (HCH)
   @group             : 
-  @last modified on  : 07-11-2023
+  @last modified on  : 07-12-2023
   @last modified by  : Harlinsson Chavarro (HCH)
 -->
 <template>
     <lightning-layout>
       <lightning-layout-item class="slds-align-middle">
-        <lightning-combobox class="slds-align-middle"></lightning-combobox>
+        <lightning-combobox class="slds-align-middle"             
+          name="Boat Type"
+          label="Boat Type"
+          value={selectedBoatTypeId}
+          placeholder="Select Boat Type"
+          options={searchOptions}
+          onchange={handleSearchOptionChange} >></lightning-combobox>
       </lightning-layout-item>
     </lightning-layout>
   </template>
-  
